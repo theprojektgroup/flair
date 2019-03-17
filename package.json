@@ -1,0 +1,39 @@
+{
+  "name": "@theprojekt/flair",
+  "version": "1.0.0",
+  "description": "Workflow API's made easy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish:minor": "",
+    "publish:major": "",
+    "compile": "tsc -p .",
+    "compile:watch": "tsc src -w",
+    "check": "gts check",
+    "clean": "gts clean",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edicury/flair.git"
+  },
+  "keywords": [
+    "workflow",
+    "flair",
+    "flow"
+  ],
+  "author": "The Projekt Group - Edison Cury Neto | Gabriel Marote",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edicury/flair/issues"
+  },
+  "homepage": "https://github.com/edicury/flair#readme",
+  "devDependencies": {
+    "tslint": "^5.14.0",
+    "gts": "^0.9.0",
+    "typescript": "~3.1.0"
+  }
+}
