@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish:minor": "",
-    "publish:major": "",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:major": "npm version major && npm publish",
     "compile": "tsc -p .",
-    "compile:watch": "tsc src -w",
+    "compile:watch": "tsc -p . -w",
     "check": "gts check",
     "clean": "gts clean",
     "fix": "gts fix",
