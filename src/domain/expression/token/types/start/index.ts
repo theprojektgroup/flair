@@ -21,7 +21,9 @@ export class StartExpression extends Expression {
 
 
   getProps(): IObject {
+    // TODO: remove console.log
     console.log('StartExpression getProps()');
+    // TODO: remove console.log
     console.log('expression: ', this.expression);
     const rate = this.getRate(this.expression) || {fullRate: ''};
     this.rate = rate.fullRate;

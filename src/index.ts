@@ -14,5 +14,6 @@ const {statement, props}: FlairStatement = workflow`
 `({prop: null});
 
 
+// TODO: remove console.log
 console.log(props);
 l.apply(statement);

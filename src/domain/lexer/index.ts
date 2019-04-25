@@ -31,8 +31,10 @@ export class Lexer {
     if (line !== '') {
       const typeOfLine = this.getType(line);
       const expression = typeOfLine.expression(line);
+      // TODO: remove console.log
       console.log(typeOfLine);
       const tokens = typeOfLine.apply(expression);
+      // TODO: remove console.log
       console.log(tokens);
     }
   }
