@@ -1,5 +1,5 @@
 enum Lines {
-    next = '\n'
+  next = '\n'
 }
 
 export = Lines;

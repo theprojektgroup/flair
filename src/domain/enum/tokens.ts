@@ -1,7 +1,7 @@
 enum Tokens {
-    do = 'do',
-    end = 'end',
-    start = 'start',
+  do = 'do',
+  end = 'end',
+  start = 'start',
 }
 
 

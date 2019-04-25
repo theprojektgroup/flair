@@ -1,14 +1,13 @@
-import { Statement, FlairStatement } from "../types";
+import {FlairStatement, Statement} from '../types';
 
-function workflow (values: any) : Function {
-    let statement : Statement = values[0];
+// tslint:disable-next-line: no-any
+function workflow(values: any): Function {
+  const statement: Statement = values[0];
 
-    return function (props: any) : FlairStatement {
-        return {
-            statement,
-            props
-        }
-    }
+  // tslint:disable-next-line: no-any
+  return (props: any): FlairStatement => {
+    return {statement, props};
+  };
 }
 
 
