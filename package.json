@@ -14,7 +14,8 @@
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
-    "posttest": "npm run check"
+    "posttest": "npm run check",
+    "start": "ts-node ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -32,8 +33,9 @@
   },
   "homepage": "https://github.com/edicury/flair#readme",
   "devDependencies": {
-    "tslint": "^5.14.0",
     "gts": "^0.9.0",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.14.0",
     "typescript": "~3.1.0"
   }
 }

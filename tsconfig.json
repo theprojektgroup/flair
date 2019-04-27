@@ -4,7 +4,8 @@
     "rootDir": ".",
     "outDir": "lib",
     "declaration": true,
-    "strict": true
+    "strict": true,
+    "lib": ["dom", "es6"]
   },
   "include": [
     "src/**/*",
