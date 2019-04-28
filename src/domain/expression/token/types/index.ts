@@ -19,7 +19,7 @@ class Expression implements IExpression {
   }
 
   getRate(expression: Statement): Rate|null {
-    const rates = ratesEnum.rateExpression.exec(expression);
+    const rates = ratesEnum.rateExpression.exec(expression) || [];
     const fullRate = rates.shift();
     if (rates.length === ratesEnum.requiredLength) {
       return {
