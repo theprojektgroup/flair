@@ -3,8 +3,8 @@ import {IObject} from '../types';
 const rates: IObject = {
   at: 'at',
   every: 'every',
-  requiredLength: 3,
   frequency: ['every', 'at'],
+  requiredLength: 3,
   unit: ['hours', 'minutes', 'days']  // has to be in plural
 };
 
