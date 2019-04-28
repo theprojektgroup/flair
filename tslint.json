@@ -13,7 +13,6 @@
     "no-duplicate-imports": true,
     "no-duplicate-super": true,
     "no-implicit-dependencies": true,
-    "no-return-await": true,
     "no-string-literal": true,
     "no-trailing-whitespace": true,
     "no-unnecessary-initializer": true,
