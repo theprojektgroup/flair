@@ -1,4 +1,4 @@
-import {IExpression, Protocol, Rate, Statement} from '../../../types';
+import { IExpression, Protocol, Rate, Statement } from '../../../types';
 
 import ratesEnum = require('../../../enum/rates');
 
@@ -12,12 +12,12 @@ class Expression implements IExpression {
 
   getProtocols(expression: Statement): Protocol[] {
     const protocols =
-        expression.split(',').map((statement) => ({name: statement.trim()}));
+        expression.split(',').map((statement) => ({ name: statement.trim() }));
 
     return protocols;
   }
 
-  getRate(expression: Statement): Rate|null {
+  getRate(expression: Statement): Rate | null {
     const rates = ratesEnum.rateExpression.exec(expression) || [];
     const fullRate = rates.shift();
     if (rates.length === ratesEnum.requiredLength) {
