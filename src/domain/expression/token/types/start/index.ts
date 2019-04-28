@@ -3,8 +3,8 @@ import Expression = require('../');
 
 export class StartExpression extends Expression {
   expression: Statement;
-  regex: RegExp;
   rate = '';
+  regex: RegExp;
 
   constructor(expression: Statement) {
     super();
@@ -16,6 +16,7 @@ export class StartExpression extends Expression {
     const rate = this.rate;
     const cleansedExpression =
         expression.replace(new RegExp(`${rate}`, 'gi'), '');
+
     return cleansedExpression;
   }
 
@@ -29,6 +30,7 @@ export class StartExpression extends Expression {
     this.rate = rate.fullRate;
     const expression = this.cleanExpression(this.expression);
     const protocols = this.getProtocols(expression);
+
     return {rate, protocols};
   }
 }

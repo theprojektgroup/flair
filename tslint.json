@@ -1,3 +1,40 @@
 {
-  "extends": "gts/tslint.json"
+  "extends": "gts/tslint.json",
+  "rules": {
+    "adjacent-overload-signatures": true,
+    "cyclomatic-complexity": true,
+    "member-ordering": [true, {
+      "alphabetize": true,
+      "order": "fields-first"
+    }],
+    "newline-before-return": true,
+    "no-consecutive-blank-lines": [true, 2],
+    // "no-console": true, // TODO uncomment this rule
+    "no-duplicate-imports": true,
+    "no-duplicate-super": true,
+    "no-implicit-dependencies": true,
+    "no-string-literal": true,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-initializer": true,
+    "no-use-before-declare": true,
+    "object-literal-key-quotes": [true, "consistent-as-needed"],
+    "object-literal-sort-keys": [true, "ignore-case", "match-declaration-order"],
+    "prefer-conditional-expression": true,
+    "unified-signatures": true,
+    "unnecessary-constructor": true,
+    "whitespace": [
+      true, 
+      "check-branch", 
+      "check-decl", 
+      "check-operator", 
+      "check-module", 
+      "check-separator", 
+      "check-rest-spread", 
+      "check-type", 
+      "check-typecast", 
+      "check-type-operator", 
+      "check-preblock", 
+      "check-postbrace"
+    ]
+  }
 }
